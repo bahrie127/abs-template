@@ -14,105 +14,36 @@ import 'package:flutter/services.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/Log Out.svg
-  SvgGenImage get logOut => const SvgGenImage('assets/icons/Log Out.svg');
+  /// File path: assets/icons/email.svg
+  SvgGenImage get email => const SvgGenImage('assets/icons/email.svg');
 
-  /// File path: assets/icons/chart-pie.svg
-  SvgGenImage get chartPie => const SvgGenImage('assets/icons/chart-pie.svg');
+  /// File path: assets/icons/notification_rounded.svg
+  SvgGenImage get notificationRounded =>
+      const SvgGenImage('assets/icons/notification_rounded.svg');
 
-  /// File path: assets/icons/delete.svg
-  SvgGenImage get delete => const SvgGenImage('assets/icons/delete.svg');
-
-  /// File path: assets/icons/filter.svg
-  SvgGenImage get filter => const SvgGenImage('assets/icons/filter.svg');
-
-  /// File path: assets/icons/folder-open.svg
-  SvgGenImage get folderOpen =>
-      const SvgGenImage('assets/icons/folder-open.svg');
-
-  /// File path: assets/icons/logo.svg
-  SvgGenImage get logo => const SvgGenImage('assets/icons/logo.svg');
-
-  /// File path: assets/icons/setting.svg
-  SvgGenImage get setting => const SvgGenImage('assets/icons/setting.svg');
-
-  /// File path: assets/icons/shopping-bag-product.svg
-  SvgGenImage get shoppingBagProduct =>
-      const SvgGenImage('assets/icons/shopping-bag-product.svg');
-
-  /// File path: assets/icons/sort.svg
-  SvgGenImage get sort => const SvgGenImage('assets/icons/sort.svg');
-
-  /// File path: assets/icons/success.svg
-  SvgGenImage get success => const SvgGenImage('assets/icons/success.svg');
+  /// File path: assets/icons/password.svg
+  SvgGenImage get password => const SvgGenImage('assets/icons/password.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [
-        logOut,
-        chartPie,
-        delete,
-        filter,
-        folderOpen,
-        logo,
-        setting,
-        shoppingBagProduct,
-        sort,
-        success
-      ];
+  List<SvgGenImage> get values => [email, notificationRounded, password];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/Splash Screen.png
-  AssetGenImage get splashScreen =>
-      const AssetGenImage('assets/images/Splash Screen.png');
+  /// File path: assets/images/logo.png
+  AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
 
-  /// File path: assets/images/dokterku.png
-  AssetGenImage get dokterku =>
-      const AssetGenImage('assets/images/dokterku.png');
+  /// File path: assets/images/logo_code_with_bahri.png
+  AssetGenImage get logoCodeWithBahri =>
+      const AssetGenImage('assets/images/logo_code_with_bahri.png');
 
-  /// File path: assets/images/google.png
-  AssetGenImage get google => const AssetGenImage('assets/images/google.png');
-
-  $AssetsImagesMenuGen get menu => const $AssetsImagesMenuGen();
-  $AssetsImagesProductsGen get products => const $AssetsImagesProductsGen();
+  /// File path: assets/images/logo_white.png
+  AssetGenImage get logoWhite =>
+      const AssetGenImage('assets/images/logo_white.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [splashScreen, dokterku, google];
-}
-
-class $AssetsImagesMenuGen {
-  const $AssetsImagesMenuGen();
-
-  /// File path: assets/images/menu/data.png
-  AssetGenImage get data => const AssetGenImage('assets/images/menu/data.png');
-
-  /// File path: assets/images/menu/jadwal.png
-  AssetGenImage get jadwal =>
-      const AssetGenImage('assets/images/menu/jadwal.png');
-
-  /// File path: assets/images/menu/layanan.png
-  AssetGenImage get layanan =>
-      const AssetGenImage('assets/images/menu/layanan.png');
-
-  /// List of all assets
-  List<AssetGenImage> get values => [data, jadwal, layanan];
-}
-
-class $AssetsImagesProductsGen {
-  const $AssetsImagesProductsGen();
-
-  /// File path: assets/images/products/paracetamol.jpg
-  AssetGenImage get paracetamol =>
-      const AssetGenImage('assets/images/products/paracetamol.jpg');
-
-  /// File path: assets/images/products/sarung tangan medis.jpg
-  AssetGenImage get sarungTanganMedis =>
-      const AssetGenImage('assets/images/products/sarung tangan medis.jpg');
-
-  /// List of all assets
-  List<AssetGenImage> get values => [paracetamol, sarungTanganMedis];
+  List<AssetGenImage> get values => [logo, logoCodeWithBahri, logoWhite];
 }
 
 class Assets {
