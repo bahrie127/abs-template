@@ -4,11 +4,11 @@ class AppColors {
   /// primary = #567DF4
   static const Color primary = Color(0xff567DF4);
 
-  /// grey = #B7B7B7
-  static const Color grey = Color(0xffB7B7B7);
+  /// grey = #A4A4A4
+  static const Color grey = Color(0xffA4A4A4);
 
-  /// light = #F8F5FF
-  static const Color light = Color(0xffF8F5FF);
+  /// light = #D0D0D0
+  static const Color light = Color(0xffD0D0D0);
 
   /// blueLight = #C7D0EB
   static const Color blueLight = Color(0xffC7D0EB);
@@ -37,6 +37,6 @@ class AppColors {
   /// subtitle = #7890CD
   static const Color subtitle = Color(0xff7890CD);
 
-  /// stroke = #F1F2F6
-  static const Color stroke = Color(0xffF1F2F6);
+  /// stroke = #DBDBDB
+  static const Color stroke = Color(0xffDBDBDB);
 }

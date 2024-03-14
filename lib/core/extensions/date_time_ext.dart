@@ -32,4 +32,11 @@ extension DateTimeExt on DateTime {
 
     return '$dayName, $day $month $year';
   }
+
+  String toFormattedTime() {
+    String hour = this.hour.toString().padLeft(2, '0');
+    String minute = this.minute.toString().padLeft(2, '0');
+
+    return '$hour:$minute WIB';
+  }
 }

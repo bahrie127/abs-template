@@ -14,8 +14,15 @@ import 'package:flutter/services.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/attendance.svg
+  SvgGenImage get attendance =>
+      const SvgGenImage('assets/icons/attendance.svg');
+
   /// File path: assets/icons/email.svg
   SvgGenImage get email => const SvgGenImage('assets/icons/email.svg');
+
+  $AssetsIconsMenuGen get menu => const $AssetsIconsMenuGen();
+  $AssetsIconsNavGen get nav => const $AssetsIconsNavGen();
 
   /// File path: assets/icons/notification_rounded.svg
   SvgGenImage get notificationRounded =>
@@ -25,11 +32,15 @@ class $AssetsIconsGen {
   SvgGenImage get password => const SvgGenImage('assets/icons/password.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [email, notificationRounded, password];
+  List<SvgGenImage> get values =>
+      [attendance, email, notificationRounded, password];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/bg_home.png
+  AssetGenImage get bgHome => const AssetGenImage('assets/images/bg_home.png');
 
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
@@ -43,7 +54,53 @@ class $AssetsImagesGen {
       const AssetGenImage('assets/images/logo_white.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [logo, logoCodeWithBahri, logoWhite];
+  List<AssetGenImage> get values =>
+      [bgHome, logo, logoCodeWithBahri, logoWhite];
+}
+
+class $AssetsIconsMenuGen {
+  const $AssetsIconsMenuGen();
+
+  /// File path: assets/icons/menu/catatan.svg
+  SvgGenImage get catatan => const SvgGenImage('assets/icons/menu/catatan.svg');
+
+  /// File path: assets/icons/menu/datang.svg
+  SvgGenImage get datang => const SvgGenImage('assets/icons/menu/datang.svg');
+
+  /// File path: assets/icons/menu/izin.svg
+  SvgGenImage get izin => const SvgGenImage('assets/icons/menu/izin.svg');
+
+  /// File path: assets/icons/menu/jadwal.svg
+  SvgGenImage get jadwal => const SvgGenImage('assets/icons/menu/jadwal.svg');
+
+  /// File path: assets/icons/menu/lembur.svg
+  SvgGenImage get lembur => const SvgGenImage('assets/icons/menu/lembur.svg');
+
+  /// File path: assets/icons/menu/pulang.svg
+  SvgGenImage get pulang => const SvgGenImage('assets/icons/menu/pulang.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values =>
+      [catatan, datang, izin, jadwal, lembur, pulang];
+}
+
+class $AssetsIconsNavGen {
+  const $AssetsIconsNavGen();
+
+  /// File path: assets/icons/nav/history.svg
+  SvgGenImage get history => const SvgGenImage('assets/icons/nav/history.svg');
+
+  /// File path: assets/icons/nav/home.svg
+  SvgGenImage get home => const SvgGenImage('assets/icons/nav/home.svg');
+
+  /// File path: assets/icons/nav/profile.svg
+  SvgGenImage get profile => const SvgGenImage('assets/icons/nav/profile.svg');
+
+  /// File path: assets/icons/nav/setting.svg
+  SvgGenImage get setting => const SvgGenImage('assets/icons/nav/setting.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values => [history, home, profile, setting];
 }
 
 class Assets {

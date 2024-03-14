@@ -12,12 +12,12 @@ class Button extends StatelessWidget {
     this.color = AppColors.primary,
     this.textColor = Colors.white,
     this.width = double.infinity,
-    this.height = 50.0,
-    this.borderRadius = 16.0,
+    this.height = 60.0,
+    this.borderRadius = 18.0,
     this.icon,
     this.suffixIcon,
     this.disabled = false,
-    this.fontSize = 16.0,
+    this.fontSize = 18.0,
   });
 
   const Button.outlined({
@@ -28,12 +28,12 @@ class Button extends StatelessWidget {
     this.color = Colors.transparent,
     this.textColor = AppColors.primary,
     this.width = double.infinity,
-    this.height = 50.0,
-    this.borderRadius = 16.0,
+    this.height = 60.0,
+    this.borderRadius = 18.0,
     this.icon,
     this.suffixIcon,
     this.disabled = false,
-    this.fontSize = 16.0,
+    this.fontSize = 18.0,
   });
 
   final Function() onPressed;

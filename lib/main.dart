@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Intensive Club batch 16',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),
+        dividerTheme: DividerThemeData(color: AppColors.light.withOpacity(0.5)),
         useMaterial3: true,
         textTheme: GoogleFonts.kumbhSansTextTheme(
           Theme.of(context).textTheme,

@@ -26,6 +26,8 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/icons/menu/
+    - assets/icons/nav/
 
 flutter_gen:
   output: lib/core/assets/
