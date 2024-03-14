@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),
         dividerTheme: DividerThemeData(color: AppColors.light.withOpacity(0.5)),
-        useMaterial3: true,
+        dialogTheme: const DialogTheme(elevation: 0),
         textTheme: GoogleFonts.kumbhSansTextTheme(
           Theme.of(context).textTheme,
         ),

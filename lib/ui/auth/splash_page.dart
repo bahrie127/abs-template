@@ -10,7 +10,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Future.delayed(
       const Duration(seconds: 2),
-      () => context.push(const MainPage()),
+      () => context.pushReplacement(const MainPage()),
     );
     return Scaffold(
       backgroundColor: AppColors.primary,

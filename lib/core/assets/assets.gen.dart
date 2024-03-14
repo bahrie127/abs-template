@@ -18,6 +18,9 @@ class $AssetsIconsGen {
   SvgGenImage get attendance =>
       const SvgGenImage('assets/icons/attendance.svg');
 
+  /// File path: assets/icons/back.svg
+  SvgGenImage get back => const SvgGenImage('assets/icons/back.svg');
+
   /// File path: assets/icons/email.svg
   SvgGenImage get email => const SvgGenImage('assets/icons/email.svg');
 
@@ -31,9 +34,12 @@ class $AssetsIconsGen {
   /// File path: assets/icons/password.svg
   SvgGenImage get password => const SvgGenImage('assets/icons/password.svg');
 
+  /// File path: assets/icons/reverse.svg
+  SvgGenImage get reverse => const SvgGenImage('assets/icons/reverse.svg');
+
   /// List of all assets
   List<SvgGenImage> get values =>
-      [attendance, email, notificationRounded, password];
+      [attendance, back, email, notificationRounded, password, reverse];
 }
 
 class $AssetsImagesGen {
@@ -41,6 +47,13 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/bg_home.png
   AssetGenImage get bgHome => const AssetGenImage('assets/images/bg_home.png');
+
+  /// File path: assets/images/failed.png
+  AssetGenImage get failed => const AssetGenImage('assets/images/failed.png');
+
+  /// File path: assets/images/img_my_location.png
+  AssetGenImage get imgMyLocation =>
+      const AssetGenImage('assets/images/img_my_location.png');
 
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
@@ -53,9 +66,24 @@ class $AssetsImagesGen {
   AssetGenImage get logoWhite =>
       const AssetGenImage('assets/images/logo_white.png');
 
+  /// File path: assets/images/see_location.png
+  AssetGenImage get seeLocation =>
+      const AssetGenImage('assets/images/see_location.png');
+
+  /// File path: assets/images/success.png
+  AssetGenImage get success => const AssetGenImage('assets/images/success.png');
+
   /// List of all assets
-  List<AssetGenImage> get values =>
-      [bgHome, logo, logoCodeWithBahri, logoWhite];
+  List<AssetGenImage> get values => [
+        bgHome,
+        failed,
+        imgMyLocation,
+        logo,
+        logoCodeWithBahri,
+        logoWhite,
+        seeLocation,
+        success
+      ];
 }
 
 class $AssetsIconsMenuGen {

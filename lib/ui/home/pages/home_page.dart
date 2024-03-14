@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/core.dart';
 import '../widgets/menu_button.dart';
+import 'attendance_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -139,7 +140,60 @@ class HomePage extends StatelessWidget {
               ),
               const SpaceHeight(24.0),
               Button.filled(
-                onPressed: () {},
+                onPressed: () {
+                  showBottomSheet(
+                    backgroundColor: AppColors.white,
+                    context: context,
+                    builder: (context) => Container(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const SizedBox(
+                            width: 60.0,
+                            height: 8.0,
+                            child: Divider(color: AppColors.lightSheet),
+                          ),
+                          const CloseButton(),
+                          const Center(
+                            child: Text(
+                              'Oops !',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 24.0,
+                              ),
+                            ),
+                          ),
+                          const SpaceHeight(4.0),
+                          const Center(
+                            child: Text(
+                              'Aplikasi ingin mengakses Kamera',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15.0,
+                              ),
+                            ),
+                          ),
+                          const SpaceHeight(36.0),
+                          Button.filled(
+                            onPressed: () => context.pop(),
+                            label: 'Tolak',
+                            color: AppColors.secondary,
+                          ),
+                          const SpaceHeight(16.0),
+                          Button.filled(
+                            onPressed: () {
+                              context.pop();
+                              context.push(const AttendancePage());
+                            },
+                            label: 'Izinkan',
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
                 label: 'Attendance Using Face ID',
                 icon: Assets.icons.attendance.svg(),
               ),
