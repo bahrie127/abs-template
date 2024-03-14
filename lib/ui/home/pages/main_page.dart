@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/assets/assets.dart';
 import '../../../core/core.dart';
 import 'home_page.dart';
 

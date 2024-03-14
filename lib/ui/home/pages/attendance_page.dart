@@ -13,6 +13,7 @@ class AttendancePage extends StatefulWidget {
 }
 
 class _AttendancePageState extends State<AttendancePage> {
+  List<CameraDescription>? _availableCameras;
   CameraController? _controller;
 
   @override
@@ -28,7 +29,11 @@ class _AttendancePageState extends State<AttendancePage> {
   }
 
   void _initializeCamera() async {
-    final description = await availableCameras().then((cameras) => cameras[0]);
+    _availableCameras = await availableCameras();
+    _initCamera(_availableCameras!.first);
+  }
+
+  void _initCamera(CameraDescription description) async {
     _controller = CameraController(description, ResolutionPreset.max);
     await _controller!.initialize();
     if (!mounted) {
@@ -42,6 +47,19 @@ class _AttendancePageState extends State<AttendancePage> {
     if (mounted) {
       context.pushReplacement(const AttendanceSuccessPage());
     }
+  }
+
+  void _reverseCamera() {
+    final lensDirection = _controller!.description.lensDirection;
+    CameraDescription newDescription;
+    if (lensDirection == CameraLensDirection.front) {
+      newDescription = _availableCameras!.firstWhere((description) =>
+          description.lensDirection == CameraLensDirection.back);
+    } else {
+      newDescription = _availableCameras!.firstWhere((description) =>
+          description.lensDirection == CameraLensDirection.front);
+    }
+    _initCamera(newDescription);
   }
 
   @override
@@ -103,7 +121,7 @@ class _AttendancePageState extends State<AttendancePage> {
                 Row(
                   children: [
                     IconButton(
-                      onPressed: () {},
+                      onPressed: _reverseCamera,
                       icon: Assets.icons.reverse.svg(width: 48.0),
                     ),
                     const Spacer(),
