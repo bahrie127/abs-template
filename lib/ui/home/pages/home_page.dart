@@ -98,8 +98,9 @@ class HomePage extends StatelessWidget {
               ),
               const SpaceHeight(80.0),
               GridView(
+                padding: const EdgeInsets.symmetric(horizontal: 50.0),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3,
+                  crossAxisCount: 2,
                   crossAxisSpacing: 30.0,
                   mainAxisSpacing: 30.0,
                 ),
@@ -117,18 +118,8 @@ class HomePage extends StatelessWidget {
                     onPressed: () {},
                   ),
                   MenuButton(
-                    label: 'Jadwal',
-                    iconPath: Assets.icons.menu.jadwal.path,
-                    onPressed: () {},
-                  ),
-                  MenuButton(
                     label: 'Izin',
                     iconPath: Assets.icons.menu.izin.path,
-                    onPressed: () {},
-                  ),
-                  MenuButton(
-                    label: 'Lembur',
-                    iconPath: Assets.icons.menu.lembur.path,
                     onPressed: () {},
                   ),
                   MenuButton(
