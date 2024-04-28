@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/core.dart';
-import '../home/pages/main_page.dart';
+import 'login_page.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -10,7 +10,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Future.delayed(
       const Duration(seconds: 2),
-      () => context.pushReplacement(const MainPage()),
+      () => context.pushReplacement(const LoginPage()),
     );
     return Scaffold(
       backgroundColor: AppColors.primary,
