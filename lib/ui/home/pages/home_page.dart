@@ -4,6 +4,7 @@ import '../../../core/core.dart';
 import '../widgets/menu_button.dart';
 import 'attendance_page.dart';
 import 'notes_page.dart';
+import 'notification_page.dart';
 import 'permit_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -48,7 +49,9 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.push(const NotificationPage());
+                    },
                     icon: Assets.icons.notificationRounded.svg(),
                   ),
                 ],
