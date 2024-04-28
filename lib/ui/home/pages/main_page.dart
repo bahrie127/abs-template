@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/core.dart';
+import 'history_page.dart';
 import 'home_page.dart';
 import 'profile_page.dart';
 import 'setting_page.dart';
@@ -16,7 +17,7 @@ class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
   final _widgets = [
     const HomePage(),
-    const Center(child: Text('This is history page')),
+    const HistoryPage(),
     const SettingPage(),
     const ProfilePage(),
   ];
