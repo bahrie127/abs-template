@@ -23,6 +23,7 @@ class LoginPage extends StatelessWidget {
           ),
           const SpaceHeight(30.0),
           CustomTextField(
+            showLabel: false,
             controller: emailController,
             label: 'Email Address',
             prefixIcon: Padding(
@@ -32,6 +33,7 @@ class LoginPage extends StatelessWidget {
           ),
           const SpaceHeight(18.0),
           CustomTextField(
+            showLabel: false,
             controller: passwordController,
             label: 'Password',
             prefixIcon: Padding(
@@ -40,7 +42,7 @@ class LoginPage extends StatelessWidget {
             ),
             obscureText: true,
           ),
-          const SpaceHeight(100.0),
+          const SpaceHeight(80.0),
           Button.filled(
             onPressed: () {
               context.pushReplacement(const MainPage());
