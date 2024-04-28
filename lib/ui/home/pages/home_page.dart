@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/core.dart';
 import '../widgets/menu_button.dart';
 import 'attendance_page.dart';
+import 'notes_page.dart';
 import 'permit_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -128,7 +129,9 @@ class HomePage extends StatelessWidget {
                   MenuButton(
                     label: 'Catatan',
                     iconPath: Assets.icons.menu.catatan.path,
-                    onPressed: () {},
+                    onPressed: () {
+                      context.push(const NotesPage());
+                    },
                   ),
                 ],
               ),
