@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../core/assets/assets.dart';
-import '../../core/components/components.dart';
 import '../../core/core.dart';
 import '../home/pages/main_page.dart';
 

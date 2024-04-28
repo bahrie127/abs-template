@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/core.dart';
 import '../widgets/menu_button.dart';
 import 'attendance_page.dart';
+import 'permit_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -120,7 +121,9 @@ class HomePage extends StatelessWidget {
                   MenuButton(
                     label: 'Izin',
                     iconPath: Assets.icons.menu.izin.path,
-                    onPressed: () {},
+                    onPressed: () {
+                      context.push(const PermitPage());
+                    },
                   ),
                   MenuButton(
                     label: 'Catatan',
