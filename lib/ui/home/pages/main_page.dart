@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/core.dart';
 import 'home_page.dart';
+import 'profile_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -16,7 +17,7 @@ class _MainPageState extends State<MainPage> {
     const HomePage(),
     const Center(child: Text('This is history page')),
     const Center(child: Text('This is setting page')),
-    const Center(child: Text('This is profile page')),
+    const ProfilePage(),
   ];
 
   @override

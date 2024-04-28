@@ -24,6 +24,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/calendar.svg
   SvgGenImage get calendar => const SvgGenImage('assets/icons/calendar.svg');
 
+  /// File path: assets/icons/edit.svg
+  SvgGenImage get edit => const SvgGenImage('assets/icons/edit.svg');
+
   /// File path: assets/icons/email.svg
   SvgGenImage get email => const SvgGenImage('assets/icons/email.svg');
 
@@ -48,6 +51,7 @@ class $AssetsIconsGen {
         attendance,
         back,
         calendar,
+        edit,
         email,
         image,
         notificationRounded,
