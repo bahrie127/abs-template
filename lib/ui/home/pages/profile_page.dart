@@ -96,6 +96,10 @@ class ProfilePage extends StatelessWidget {
                 title: const Text('Perangkat Terdaftar'),
                 trailing: const Icon(Icons.chevron_right),
               ),
+              const Divider(
+                color: AppColors.stroke,
+                height: 2.0,
+              ),
             ],
           ),
         ),

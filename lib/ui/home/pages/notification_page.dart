@@ -95,7 +95,7 @@ class NotificationPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SpaceHeight(8.0),
+                      const SpaceHeight(4.0),
                       Text.rich(
                         TextSpan(
                           text: item.title,
@@ -115,8 +115,10 @@ class NotificationPage extends StatelessWidget {
                     ],
                   );
                 },
-                separatorBuilder: (context, index) =>
-                    const Divider(color: AppColors.stroke),
+                separatorBuilder: (context, index) => const Divider(
+                  color: AppColors.stroke,
+                  height: 24.0,
+                ),
                 itemCount: notifications.length,
               ),
       ),
